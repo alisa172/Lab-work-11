@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .everything {
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        .dani {
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+        }
+
+        .border {
+            width: 5em;
+            text-align: center;
+            border-color: chartreuse;
+            border-width: 1.5px;
+        }
+
+        .the-buttons {
+            background-color: rgb(92, 127, 226);
+            color: white;
+            cursor: pointer;
+            height: 2.4em;
+            border: none;
+        }
+
+        hr {
+            border-top: dotted 1.8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="everything">
+        <hr>
+        <form>
+         <p class="dani">Вихідні дані</p>
+         <p>A:<input type="text" id="numb_a" value="2" class="border"></p>
+         <p>B:<input type="text" id="numb_b" value="3" class="border"></p>
+         <p>Початок <input type="text" id="numb_start" value="30" class="border"></p>
+         <p>Кінець <input type="text" id="numb_end" value="70" class="border"></p>
+         <p>Крок <input type="text" id="numb_step" value="10" class="border"></p>
+         <p><input type="button" class="the-buttons" value="Побудувати" onClick="if_else()"> <br> <br>
+          <button id="clearButton" class="the-buttons">Очистити поле</button></p>
+        </form>
+         <p id="itog" class="dani">Результат</p>
+         <hr>
+    </div>
+
+    <script src="js/js.js"></script>
+</body>
+</html>
